@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#03050b">
+<title>Zevixo Realm — Under Maintenance</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
+:root{--bg:#03050b;--white:#f2f6ff;--cyan:#55dcff;--blue:#168bff;--violet:#9b63ff;--magenta:#ff3fbd}
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%;background:var(--bg);color:var(--white);font-family:"Space Grotesk",Arial,sans-serif}
+body{min-height:100svh;display:grid;place-items:center;overflow:hidden;position:relative}
+body:before{content:"";position:absolute;inset:0;background:linear-gradient(rgba(85,220,255,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(85,220,255,.045) 1px,transparent 1px);background-size:52px 52px;mask-image:radial-gradient(ellipse at center,#000,transparent 76%);pointer-events:none}
+body:after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 50% 45%,#168bff20,transparent 42%),radial-gradient(ellipse at 72% 62%,#9b63ff18,transparent 35%);pointer-events:none}
+.frame{position:relative;z-index:1;width:min(900px,92vw);min-height:80svh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:40px 16px}
+.brand{font-size:clamp(25px,5vw,42px);font-weight:700;letter-spacing:.22em;line-height:1;text-shadow:0 0 28px #168bff55}
+.brand span{background:linear-gradient(90deg,var(--cyan),var(--blue),var(--violet),var(--magenta));-webkit-background-clip:text;background-clip:text;color:transparent}
+.brand small{display:block;font-size:10px;letter-spacing:.7em;font-weight:500;margin-top:12px;color:#b9c9e8}
+.orbit{width:clamp(150px,25vw,220px);aspect-ratio:1;border:1px solid #55dcff66;border-radius:50%;margin:52px 0 42px;position:relative;display:grid;place-items:center;box-shadow:0 0 55px #168bff18,inset 0 0 45px #9b63ff10;animation:pulse 4s ease-in-out infinite}
+.orbit:before,.orbit:after{content:"";position:absolute;border:1px solid #9b63ff88;border-radius:50%;inset:15%;transform:rotateX(65deg) rotateZ(24deg)}
+.orbit:after{inset:27%;border-color:#ff3fbd99;transform:rotateX(70deg) rotateZ(-30deg)}
+.core{width:17%;aspect-ratio:1;border-radius:50%;background:linear-gradient(135deg,var(--cyan),var(--violet) 65%,var(--magenta));box-shadow:0 0 25px #55dcff99,0 0 70px #9b63ff66;animation:corePulse 2.8s ease-in-out infinite}
+.status{font-size:9px;letter-spacing:.28em;text-transform:uppercase;color:var(--cyan);display:flex;align-items:center;gap:10px;margin-bottom:20px}
+.dot{width:6px;height:6px;border-radius:50%;background:var(--magenta);box-shadow:0 0 12px var(--magenta);animation:blink 1.4s steps(2,end) infinite}
+h1{font-size:clamp(42px,8vw,92px);line-height:.9;letter-spacing:-.075em;text-transform:uppercase;margin:0;font-weight:600}
+h1 span{display:block;background:linear-gradient(90deg,#f2f6ff 10%,var(--cyan) 45%,var(--violet) 78%,var(--magenta));-webkit-background-clip:text;background-clip:text;color:transparent;padding-bottom:.08em}
+p{color:#9aa8c5;font-size:13px;line-height:1.7;letter-spacing:.04em;max-width:430px;margin:22px auto 0}
+.rule{height:1px;width:min(360px,70vw);margin:32px auto 18px;background:linear-gradient(90deg,transparent,var(--cyan),var(--violet),transparent);opacity:.7}
+.foot{font-size:8px;letter-spacing:.22em;color:#627493;text-transform:uppercase}
+.corner{position:absolute;width:30px;height:30px;border-color:#55dcff66;border-style:solid}
+.tl{top:0;left:0;border-width:1px 0 0 1px}.tr{top:0;right:0;border-width:1px 1px 0 0}.bl{bottom:0;left:0;border-width:0 0 1px 1px}.br{bottom:0;right:0;border-width:0 1px 1px 0}
+@keyframes pulse{0%,100%{transform:scale(1);box-shadow:0 0 55px #168bff18,inset 0 0 45px #9b63ff10}50%{transform:scale(1.035);box-shadow:0 0 80px #168bff30,inset 0 0 55px #9b63ff18}}
+@keyframes corePulse{0%,100%{transform:scale(.85);filter:hue-rotate(0)}50%{transform:scale(1.12);filter:hue-rotate(25deg)}}
+@keyframes blink{50%{opacity:.25}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important}}
+</style>
+</head>
+<body>
+<main class="frame">
+  <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+  <div class="brand"><span>ZEVIXO</span><small>R E A L M</small></div>
+  <div class="orbit" aria-hidden="true"><div class="core"></div></div>
+  <div class="status"><i class="dot"></i> SYSTEM UPDATE IN PROGRESS</div>
+  <h1>UNDER <span>MAINTENANCE</span></h1>
+  <p>We’re upgrading the realm. Our experience will be back online soon.</p>
+  <div class="rule"></div>
+  <div class="foot">ZEVIXO REALM&nbsp; / &nbsp;HYDERABAD</div>
+</main>
+</body>
+</html>
