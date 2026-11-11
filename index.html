@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#02040b">
+<title>Zevixo Realm | World of Pure Imagination</title>
+<meta name="description" content="Wear the illuminated jacket and goggles. Step into an immersive LED universe at Zevixo Realm, Prasads, Hyderabad.">
+<meta property="og:title" content="Zevixo Realm — World of Pure Imagination">
+<meta property="og:description" content="A new kind of immersive experience in Hyderabad.">
+<meta property="og:image" content="assets/zevixo-hero.jpg">
+<link rel="stylesheet" href="assets/style.css"></head><body>
+<section class="hero"><img class="hero-photo" src="assets/zevixo-hero.jpg" alt="" aria-hidden="true"><div class="grid-overlay"></div><div class="frame"></div><div class="scan"></div>
+<header><a class="brand" href="#">ZEVIXO<small>REALM</small></a><div class="top-right"><nav class="home-nav"><a href="#experiences">EXPERIENCES⌄</a><a href="#experiences">EVENTS⌄</a><a href="gallery.html">GALLERY</a><a href="tickets.html">TICKETS</a><a href="location.html">⌖ HYDERABAD</a></nav><a class="menu-mark" href="#site-menu" aria-label="Open site navigation">☰</a></div></header>
+<nav id="site-menu" class="site-menu"><a href="immersive-led-room.html">Immersive LED Room</a><a href="lasermaze.html">LaserMaze</a><a href="birthday-celebrations.html">Birthday Celebrations</a><a href="corporate-events.html">Corporate Events</a><a href="gallery.html">Gallery</a><a href="tickets.html">Tickets & Pricing</a><a href="location.html">Find Us</a></nav>
+<main><div class="eyebrow">IMMERSIVE EXPERIENCE / 001</div><h1>WORLD OF<br><span>PURE</span><br>IMAGINATION.</h1>
+<p class="desc">Wear the illuminated jacket. Put on the goggles. Step into a world of light, sound and motion.</p>
+<div class="cta-row"><a class="cta" href="#experiences">EXPLORE EXPERIENCES <b>→</b></a><a class="secondary" href="https://www.instagram.com/zevixorealm/" target="_blank" rel="noopener">FOLLOW THE SIGNAL</a></div></main>
+<div class="side-data"><strong>08</strong><span>IMMERSIVE<br>WORLDS</span></div>
+<footer><div class="bottom-left">PRASADS IMAX MALL<span>NTR GARDENS · HYDERABAD</span></div><div class="bottom-right">LIGHT / SPACE / YOU<br>© ZEVIXO REALM 2026</div></footer>
+</section>
+
+<section class="cube-transition" id="transition" aria-label="Dimensional transition">
+  <div class="cube-sticky">
+    <div class="cube-space"></div>
+    <div class="cube-caption"><span>REALITY IS ONLY THE BEGINNING</span><strong>BREAK THROUGH<br>THE DIMENSIONS.</strong></div>
+    <div class="cube-cluster" aria-hidden="true">
+      <div class="cube cube-a"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      <div class="cube cube-b"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      <div class="cube cube-c"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      <div class="cube cube-d"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      <div class="cube cube-e"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    </div>
+    <div class="cube-hint">SCROLL TO COLLIDE <span>↓</span></div>
+  </div>
+</section>
+<section class="experiences" id="experiences">
+  <div class="experience-heading"><span>THE REALM / DISCOVER</span><h2>CHOOSE YOUR<br><em>EXPERIENCE.</em></h2></div>
+  <div class="home-experience-grid">
+    <a class="home-experience-card led" href="immersive-led-room.html"><img src="assets/immersive-led-room.jpg" alt="Immersive LED room with cosmic visuals"><span class="card-icon">◇</span><b>IMMERSIVE<br>LED ROOM</b><i>↗</i></a>
+    <a class="home-experience-card laser" href="lasermaze.html"><img src="assets/lasermaze.jpg" alt="LaserMaze obstacle challenge"><span class="card-icon">⌖</span><b>LASERMAZE</b><i>↗</i></a>
+    <a class="home-experience-card birthday" href="birthday-celebrations.html"><img src="assets/birthday-celebration.jpg" alt="Birthday celebration at Zevixo Realm"><span class="card-icon">✧</span><b>BIRTHDAY<br>CELEBRATIONS</b><i>↗</i></a>
+    <a class="home-experience-card corporate" href="corporate-events.html"><img src="assets/corporate-team.jpg" alt="Corporate team experience at Zevixo Realm"><span class="card-icon">◎</span><b>CORPORATE<br>EVENTS</b><i>↗</i></a>
+  </div>
+  <div class="feature-strip">
+    <div><b>◇</b><span>360°<small>SURROUND VISUALS</small></span></div>
+    <div><b>♧</b><span>ILLUMINATED<small>JACKET & GOGGLES</small></span></div>
+    <div><b>∿</b><span>MULTI-SENSORY<small>EXPERIENCE</small></span></div>
+    <div><b>♙</b><span>GROUP &<small>PRIVATE EVENTS</small></span></div>
+  </div>
+  <div class="home-visit-strip"><span>⌖ PRASADS IMAX MALL · HYDERABAD</span><span>◷ OPEN DAILY · 11 AM – 11 PM</span><a href="tickets.html">BOOK YOUR EXPERIENCE ↗</a></div>
+</section>
+
+<script>
+(() => {
+ const section=document.querySelector('.cube-transition');
+ const cubes=[...document.querySelectorAll('.cube')];
+ const caption=document.querySelector('.cube-caption');
+ if(!section || !cubes.length) return;
+ const clamp=(v,a,b)=>Math.max(a,Math.min(b,v));
+ const update=()=>{
+  const rect=section.getBoundingClientRect();
+  const range=section.offsetHeight-innerHeight;
+  const p=clamp(-rect.top/range,0,1);
+  const offsets=[
+   [-250,-130, -180, -35, 25, 0],
+   [220,-170, 150, 42, -35, 18],
+   [-190,190, 110, -42, 50, -22],
+   [250,160, -100, 52, 20, 30],
+   [0,0,240,0,0,0]
+  ];
+  cubes.forEach((cube,i)=>{
+   const [x,y,z,rx,ry,rz]=offsets[i];
+   const converge=Math.max(0,1-Math.abs(p-.52)/.28);
+   const scatter=clamp((p-.55)/.4,0,1);
+   const start=1-converge;
+   const tx=x*(1-converge)+x*scatter*.45;
+   const ty=y*(1-converge)+y*scatter*.45;
+   const tz=z*(1-converge)+z*scatter*.4;
+   const scale=.72+converge*.55+scatter*.25;
+   cube.style.transform=`translate3d(${tx}px,${ty}px,${tz}px) rotateX(${rx+ p*230}deg) rotateY(${ry+p*280}deg) rotateZ(${rz+p*130}deg) scale(${scale})`;
+   cube.style.opacity=String(.38+converge*.62-scatter*.15);
+  });
+  if(caption) caption.style.opacity=String(1-clamp((p-.34)/.28,0,1));
+ };
+ window.addEventListener('scroll',update,{passive:true});
+ window.addEventListener('resize',update);
+ update();
+})();
+</script>
+
+<div class="mobile-actions"><a href="#experiences">EXPLORE</a><a class="primary" href="tickets.html">TICKETS & PRICING ↗</a></div>
+</body></html>
